@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Notes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="vendor/bootstrap-css-only/css/bootstrap.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/notes">Notes</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div data-ng-view></div>
+        </div>
+        <script src="vendor/angular/angular.js"></script>
+        <script src="vendor/angular-route/angular-route.js"></script>
+        <script src="vendor/angular-resource/angular-resource.js"></script>
+        <script src="vendor/moment/moment.js"></script>
+        <script src="vendor/angular-moment/angular-moment.js"></script>
+        <script src="featureModules/notes/js/notesModule.js"></script>
+        <script src="featureModules/notes/js/notesListController.js"></script>
+        <script src="featureModules/notes/js/notesDisplayController.js"></script>
+        <script src="featureModules/notes/js/notesCreateController.js"></script>
+        <script src="featureModules/notes/js/noteResourceService.js"></script>
+        <script src="featureModules/notes/js/limitWithEllipsisFilter.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

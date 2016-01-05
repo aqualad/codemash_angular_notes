@@ -1,0 +1,23 @@
+
+<h3>Create a new note</h3>
+
+<form name="createNoteForm" data-ng-submit="add()" role="form">
+    <div class="input-group">
+        <label for="title">Title</label>
+        <br/>
+        <input type="text" id="title" name="title" class="form-control" data-ng-model="note.title" data-ng-required="true" placeholder="title">
+    </div>
+
+    <div class="input-group">
+        <label class="note-text" for="note">Note</label>
+        <br/>
+        <textarea id="note" name="note" cols="50" rows="10" class="form-control" data-ng-model="note.body" data-ng-required="true" placeholder="Notes go here"></textarea>
+    </div>
+
+
+    <div class="input-group">
+        <button type="submit" data-ng-disabled="createNoteForm.$invalid" class="save btn btn-primary">
+            Save
+        </button>
+    </div>
+</form>

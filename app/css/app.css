@@ -1,0 +1,52 @@
+body {
+  padding-top: 75px;
+}
+
+nav .active {
+    font-weight: bold;
+}
+
+.noteBlock {
+    cursor: pointer;
+}
+
+.blockLink {
+    text-decoration: none !important;
+}
+
+.blockLinkTitle {
+  a:hover {
+        text-decoration: underline;
+    }
+}
+
+.muted {
+    opacity: .5;
+}
+
+.body {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.addButtonDiv {
+    margin-bottom: 20px;
+}
+
+.save {
+    margin-top: 10px;
+}
+
+.note-text {
+    margin-top: 20px;
+}
+
+.force-wordwrap {
+  word-wrap: break-word;
+}
+
+.stop-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

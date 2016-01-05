@@ -1,0 +1,7 @@
+<h1>{{ note.title }} <button data-ng-click='delete()' class="btn btn-danger">Delete</button></h1>
+
+<h5>Written {{ note.created | date:'MMMM dd yyyy, h:mm a' }}</h5>
+
+<div class="body">
+    <pre>{{ note.body }}</pre>
+</div>
